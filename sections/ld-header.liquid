@@ -1,0 +1,47 @@
+<header class="ld-header">
+  <div class="ld-header__inner">
+    <nav class="ld-header__nav">
+      <a href="/collections/all">Shop</a>
+      <a href="/collections">Collections</a>
+      <a href="/pages/about">About</a>
+    </nav>
+
+    <a href="{{ routes.root_url }}" class="ld-header__logo">
+      LANDOUX
+    </a>
+
+    <div class="ld-header__icons">
+
+  <a href="{{ routes.search_url }}" class="ld-header__icon" aria-label="Search">
+
+    {{ 'icon-search.svg' | inline_asset_content }}
+
+  </a>
+
+  <a href="{{ routes.account_url }}" class="ld-header__icon" aria-label="Account">
+
+    {{ 'icon-account.svg' | inline_asset_content }}
+
+  </a>
+
+  <a href="{{ routes.cart_url }}" class="ld-header__icon" aria-label="Shopping Bag">
+
+    {{ 'icon-cart.svg' | inline_asset_content }}
+
+  </a>
+
+</div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "LD Header",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LD Header"
+    }
+  ]
+}
+{% endschema %}

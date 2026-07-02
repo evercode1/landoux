@@ -9,14 +9,14 @@
  */
 {
   "type": "header",
-  "name": "t:general.header",
+  "name": "Header",
   "sections": {
+    "announcement": {
+      "type": "ld-announcement-bar"
+    },
     "header": {
-      "type": "header",
-      "settings": {}
+      "type": "ld-header"
     }
   },
-  "order": [
-    "header"
-  ],
+  "order": ["announcement", "header"]
 }
