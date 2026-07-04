@@ -5,22 +5,7 @@
     },
     "collections": {
       "type": "ld-collections"
-    },
-    "brand_story": {
-      "type": "ld-brand-story"
-    },
-    "featured_products": {
-      "type": "ld-featured-products"
-    },
-    "instagram": {
-      "type": "ld-instagram"
     }
   },
-  "order": [
-    "hero",
-    "collections",
-    "brand_story",
-    "featured_products",
-    "instagram"
-  ]
+  "order": ["hero", "collections"]
 }

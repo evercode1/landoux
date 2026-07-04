@@ -1,26 +1,75 @@
 <footer class="ld-footer">
-  <div class="ld-container ld-footer__inner">
-    <div>
-      <h2>Landoux</h2>
+  <div class="ld-footer__inner">
+
+    <div class="ld-footer__brand">
+      <div class="ld-logo-wordmark-footer">LANDOUX</div>
       <p>Affordable luxury for the life you’re creating.</p>
     </div>
 
-    <div class="ld-footer__links">
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">FAQ</a>
+    <div class="ld-footer__columns">
+
+      <div class="ld-footer__column">
+        <h3>Shop</h3>
+        <a href="/collections/rings">Rings</a>
+        <a href="/collections/earrings">Earrings</a>
+        <a href="/collections/necklaces">Necklaces</a>
+        <a href="/collections/bracelets">Bracelets</a>
+      </div>
+
+      <div class="ld-footer__column">
+        <h3>About</h3>
+        <a href="/pages/our-story">Our Story</a>
+        <a href="/pages/materials">Materials</a>
+        <a href="/blogs/journal">Journal</a>
+        <a href="/pages/reviews">Reviews</a>
+      </div>
+
+      <div class="ld-footer__column">
+        <h3>Customer Care</h3>
+        <a href="/pages/shipping">Shipping</a>
+        <a href="/pages/returns">Returns</a>
+        <a href="/pages/warranty">Warranty</a>
+        <a href="/pages/contact">Contact</a>
+      </div>
+
+      <div class="ld-footer__newsletter">
+        <h3>Private Access</h3>
+        <p>Be first to discover new collections, special releases, and Landoux stories.</p>
+
+        <form method="post" action="/contact#contact_form" accept-charset="UTF-8" class="ld-footer__form">
+          <input type="hidden" name="form_type" value="customer">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="email" name="contact[email]" placeholder="Email address" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+
     </div>
+
+    <div class="ld-footer__bottom">
+      <div class="ld-footer__social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+
+      <div class="ld-footer__legal">
+        <span>© {{ 'now' | date: '%Y' }} Landoux</span>
+        <a href="/policies/privacy-policy">Privacy Policy</a>
+        <a href="/policies/terms-of-service">Terms</a>
+      </div>
+    </div>
+
   </div>
 </footer>
 
 {% schema %}
 {
-  "name": "LD Footer",
+  "name": "Landoux Footer",
   "settings": [],
   "presets": [
     {
-      "name": "LD Footer"
+      "name": "Landoux Footer"
     }
   ]
 }
